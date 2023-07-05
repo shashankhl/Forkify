@@ -42,28 +42,6 @@ export const loadRecipe = async function (id) {
     // const data = await getJSON(`${API_URL}${id}`);
     const data = await AJAX(`${API_URL}${id}?key=${KEY}`);
 
-    /* // const res = await fetch(
-    //   // `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
-    //   `${API_URL}/${id}`
-    // );
-    // const data = await res.json();
-
-    // if (!res.ok) throw new Error(`${data.message} (${res.status})`);
-
-    // console.log(data);
-    // const { recipe } = data.data;
-    // state.recipe = {
-    //   id: recipe.id,
-    //   title: recipe.title,
-    //   publisher: recipe.publisher,
-    //   sourceUrl: recipe.source_url,
-    //   image: recipe.image_url,
-    //   servings: recipe.servings,
-    //   cookingTime: recipe.cooking_time,
-    //   ingredients: recipe.ingredients,
-    //   fav: 'test',
-    // };*/
-
     state.recipe = createRecipeObject(data);
 
     if (state.bookmarks.some(bookmark => bookmark.id === id))
