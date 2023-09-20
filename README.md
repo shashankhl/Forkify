@@ -53,7 +53,8 @@ Install project dependencies:
 bash
 Copy code
 npm install
-Usage
+
+### Usage
 Searching for Recipes
 Open the application in your web browser.
 
@@ -63,7 +64,7 @@ Hit the "Search" button or press Enter.
 
 Browse through the search results and click on a recipe card to view details.
 
-Viewing Recipe Details
+### Viewing Recipe Details
 Click on a recipe card in the search results.
 
 View detailed information about the selected recipe, including ingredients and preparation steps.
@@ -77,12 +78,9 @@ The ingredients for the selected recipe will be added to your shopping list.
 
 You can modify the shopping list by checking off items or removing them.
 
-Contributing
+### Contributing
 Contributions are welcome! If you have any improvements or feature suggestions, please submit a pull request or open an issue on the repository.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgments
+### Acknowledgments
 Jonas Schmedtmann for the inspiration and guidance in creating this project.
 The open-source community for valuable resources and libraries used in Forkify.
